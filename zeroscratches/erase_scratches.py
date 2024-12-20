@@ -17,6 +17,8 @@ import torch
 from huggingface_hub import snapshot_download
 from torchvision.transforms import transforms
 
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from zeroscratches.erasescratches.models import Pix2PixHDModel_Mapping
 from zeroscratches.erasescratches.options import Options
 from zeroscratches.maskscratches import ScratchesDetector
